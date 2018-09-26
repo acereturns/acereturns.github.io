@@ -1,0 +1,1342 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="zxx">
+<!--<![endif]-->
+
+<head>
+    <base href="">
+    <!-- Basic metas
+    ======================================== -->
+    <meta charset="utf-8">
+    <meta name="author" content="AceReturns">
+    <meta name="description" content="Get 115% of your investments everyday! Forever... Automatic Ethereum smart contract. Absolute transparency.">
+    <meta name="keywords" content="">
+
+    <!-- Mobile specific metas
+    ======================================== -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Page Title
+    ======================================== -->
+    <title>Get 115% Returns every day!</title>
+
+    <!-- links for favicon
+    ======================================== -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Icon fonts
+    ======================================== -->
+    <link rel="stylesheet" type="text/css" href="css/cryptowallet-argon.css">
+
+    <!-- css links
+    ======================================== -->
+    <!-- Bootstrap link -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+
+    <!-- Magnific popup -->
+    <link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+
+    <!-- Custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Responsive styling -->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+
+    <style>
+        .info-bar {
+            background-color: #000099;
+            opacity: 0.9;
+            padding: 1rem 30px;
+            margin-bottom: 0.5rem;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all .5s;
+        }
+
+        .info-bar h4,
+        h5 {
+            margin-bottom: 0px;
+        }
+
+        .info-bar {
+            padding: 0.5rem 0 !important;
+        }
+
+        .navbar {
+            padding: 2rem 0 !important;
+        }
+    </style>
+
+    <script type="text/javascript">
+      function getCookie(name) {
+            var dc = document.cookie;
+            var prefix = name + "=";
+            var begin = dc.indexOf("; " + prefix);
+
+        if (begin == -1) {
+                begin = dc.indexOf(prefix);
+                if (begin != 0) return null;
+            }
+            else
+            {
+                begin += 2;
+                var end = document.cookie.indexOf(";", begin);
+                if (end == -1) {
+                end = dc.length;
+              }
+            }
+
+        return decodeURI(dc.substring(begin + prefix.length, end));
+      }
+
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var theCookie = "masternode=" + url.searchParams.get("masternode");
+
+      if (url.searchParams.get("masternode") !== null) {
+        var toSet = "masternode=" + url.searchParams.get("masternode");
+        document.cookie=theCookie;
+      } else {
+
+        var refCookie = getCookie("masternode");
+
+        if (refCookie === null) {
+          console.log("Ref cookie was null. Setting to default.");
+          document.cookie = "masternode=0x0x0000000000000000000000000000000000000000";
+        } else {
+          // do nothing if the cookie is already set and there is no new mnode link
+        }
+      }
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125423328-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  // gtag('config', 'ROFLROFLROFL');
+	</script>
+
+</head>
+
+
+<!-- body starts
+============================================ -->
+
+<body>
+
+    <!-- Preloader -->
+    <!--
+    <div class="o-preloader">
+        <div class="o-preloader_inner"></div>
+    </div>
+	-->
+
+    <div class="radial-bg radial-bg__banner">
+    </div>
+    <!-- End of .radial-bg -->
+
+    <!-- navbar starts
+============================================ -->
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+            <a class="navbar-brand" href="./">
+                <img src="images/brand-logo.png" alt="brand logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="toggler-icon-bar bar1"></span>
+                <span class="toggler-icon-bar bar2"></span>
+                <span class="toggler-icon-bar bar3"></span>
+            </button>
+            <!-- End of .navbar-toggler -->
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#_howitworks">How it works
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#_contract">Smart contract
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#_bounty">Affiliate Bounty
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#_faq">FAQ
+                        </a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="https://discord.gg/UXrU9Gm" target="new">DISCORD
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-small" href="#_investments">INVEST</a>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+        <!-- End of .container -->
+    </nav>
+    <!-- End of .navbar -->
+
+    <!-- banner starts
+============================================ -->
+    <section class="banner">
+        <div class="container">
+            <div class="banner-wrapper d-flex align-items-center">
+                <div class="banner-txt">
+                    <h1>Get 115% of your investments
+                        <br>everyday! Forever...</h1>
+                    <p>Automatic Ethereum smart contract. Absolute transparency.
+                        <br>Decentralized. Withdraw dividends from the first minute..
+                        <br>
+                    </p>
+                    <a class="btn" href="#_investments">INVEST</a>
+                    <a class="btn btn-play" href="#_bounty">
+                        <i><img src="images/icon-user.png" width="25" height="25"></i> 5% Referral Commission
+                    </a>
+                </div>
+                <!-- End of .banner-txt -->
+
+                <div class="img-container img-container__banner">
+                <div class="banner-txt">
+                    <h4>More Projects will be launched one by one!
+                        <br>Join our Discord Channel to know the updates!</h4>
+                    </div>
+                    <img src="images/home-banner.png" alt="home banner image" class="img-fluid ml-auto">
+                </div>
+                <!-- End of .img-container -->
+            </div>
+            <!-- End of .banner-wrapper -->
+        </div>
+        <!-- End of .container -->
+    </section>
+    <!-- End of .banner -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 error-bar" style="display:none" id="no-metamask">
+                <h4>Metamask is not detected. It's highly recommended to use Metamask! <a href="#" style="color:#fff; text-decoration:underline" data-toggle="modal" data-target="#why-use-metamask">Guide</a></h4>
+            </div>
+            <div class="col-lg-12 error-bar" style="display:none" id="no-mainnet">
+                <h4>You are running Metamask on testnet. Please switch to Mainnet. <a href="#" style="color:#fff; text-decoration:underline" data-toggle="modal" data-target="#switch-metamask-to-mainnet">Guide</a></h4>
+            </div>
+            <div class="col-lg-12 error-bar" style="display:none" id="no-account">
+                <h4>Please unlock Metamask. </h4>
+            </div>
+            <div class="col-lg-6">
+                <div class="token-box m-b-40" id="_investments">
+                    <center>
+                        <h4>Your investments</h4>
+                        <div class="token-price">
+                            <span id="f_investments">0.00 ETH</span> Minimum 0.01 ETH. <a href="#" id="refresh_investments">Refresh</a>
+                        </div>
+                        <a href="#" class="btn btn-small" data-toggle="modal" data-target="#invest-metamask" id="invest_btn">INVEST</a>
+                        <p style="padding-top:0.8rem">
+                            Guide: <a href="#" data-toggle="modal" data-target="#why-use-metamask">Metamask</a>
+                        </p>
+                    </center>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="token-box m-b-40">
+                    <center>
+                        <h4>Your dividends</h4>
+                        <div class="token-price">
+                            <span id="f_available">0.00 ETH</span> Dividends updates every minute. <a href="#" id="refresh_dividends">Refresh</a>
+                        </div>
+                        <p style="color:red;" id="withdraw_error"></p>
+                        <a href="#" class="btn btn-success btn-small" id="invest_withdraw">WITHDRAW</a>
+                        <p style="padding-top:0.8rem">
+                            Guide: <a href="#" data-toggle="modal" data-target="#why-use-metamask">Metamask</a>
+                        </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <!--DATA-->
+        <!-- <div class="row">
+            <div class="col-lg-3 m-b-40">
+                <div class="data-content">
+                    <h3 id="s-users"> - </h3>
+                    <p>investors</p>
+                </div>
+            </div>
+
+            <div class="col-lg-6 m-b-40">
+                <div class="data-content">
+                    <h3 id="s-eth"> - ETH </h3>
+                    <p><span style="color:yellow;" id="s-usd">  $ </span> already invested</p>
+                </div>
+            </div>
+
+            <div class="col-lg-3 m-b-40">
+                <div class="data-content">
+                    <h3 id="s-last_tx"> 46 min</h3>
+                    <p>ago last tx passed</p>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- CHARTS -->
+        <!--<div class="row">
+            <div class="col-lg-12 ">
+                <div class="line-chart2" style="height:400px;">
+                    <div id="chart-container2"></div>
+                </div>
+            </div>
+        </div> -->
+
+
+    </div>
+    <!-- token-slider starts
+============================================ -->
+
+
+
+
+    <!-- benefits-of-solution starts ============================================ -->
+    <section class="section">
+        <div class="container">
+            <div class="benefits-of-solution section-padding">
+                <div class="section-heading text-center" id="_howitworks">
+                    <h2>How does it work?</h2>
+                    <p>Fund Ethereum smart contract with any amount > 0.01 ETH and get 115% dividends everyday! Forever...</p>
+                </div>
+                <!-- End of .section-heading -->
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="benefits-content">
+                            <i><img src="images/cloud-icon.png" height="25" width="25"></i>
+
+                            <h4>Send a certain amount of Ethereum to the address of the smart contract</h4>
+                            <p>A smart contract will remember the address of your wallet and the amount of the investment. Use Metamask with our website to send and withdraw your dividends.</p>
+                        </div>
+                        <!-- End of inner-content -->
+                    </div>
+                    <!-- End of .col-md-6 -->
+
+                    <div class="col-md-6">
+                        <div class="benefits-content">
+                            <i><img src="images/cloud-icon.png" height="25" width="25"></i>
+                            <h4>Every 24 hours you will get 115% of your deposit as your dividends</h4>
+                            <p>That means you will get 115% of your investments daily forever as long as the contract has ETH in it. The 115% percent dividend will be divided by 1440 and credited to your account every minute.
+                            </p>
+                        </div>
+                        <!-- End of inner-content -->
+                    </div>
+                    <!-- End of .col-md-6 -->
+
+                    <div class="col-md-6">
+                        <div class="benefits-content">
+                            <i><img src="images/cloud-icon.png" height="25" width="25"></i>
+                            <h4>Withdraw your dividends anytime</h4>
+                            <p>Just click "Withdraw" button above and claim your dividends. <span style="color:yellow;">Dividends are updated every minute automatically. You can withdraw them even every minute (but do not forget about the gas costs on micro withdrawals).</span></p>
+                        </div>
+                        <!-- End of inner-content -->
+                    </div>
+                    <!-- End of .col-md-6 -->
+
+                    <div class="col-md-6">
+                        <div class="benefits-content">
+                           <i><img src="images/cloud-icon.png" height="25" width="25"></i>
+                            <h4>What is the minimum deposit amount?</h4>
+                            <p>Minimum deposit is 0.01 ETH. You can add further investments anytime. If you invest further, contract will pay you the unclaimed dividends first.</p>
+                        </div>
+                        <!-- End of inner-content -->
+                    </div>
+                    <!-- End of .col-md-6 -->
+                </div>
+
+ <!-- End of .row -->
+            </div>
+            <!-- End of .benefits-of-solution -->
+        </div>
+        <!-- End of .container -->
+    </section>
+    <!-- End of section -->
+
+    <!-- features starts
+============================================ -->
+    <section class="features">
+        <div class="radial-bg radial-bg__features">
+        </div>
+        <!-- End of .radial-bg -->
+
+        <div class="container">
+            <div class="feature-wrapper">
+                <div class="feature-content section-padding" id="_contract">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="text-content">
+                                <h2>Smart contract
+                                </h2>
+                                <p>This is an investment project of a new generation based on the Ethereum smart contract. The smart contract is loaded into the Ethereum blockchain, verified and checked for the security. The contract code is open and available
+                                    at Etherscan.io. The contract code can only do those functions that are inherent in it initially; it cannot be changed or deleted. This guarantees absolute transparency and honesty of the project. The creator cannot
+                                    affect the work of the project in any way.
+                                </p>
+                                <a href="https://etherscan.io/address/0x9227d9c3410cc848dfe260bddc7430461b37d39c" class="btn-link" target="_blank">READ SMART CONTRACT ON THE ETHERSCAN
+                                    <i><img src="images/arrow.png" height="15" width="15"></i>
+                                </a>
+                            </div>
+                            <!-- End of .text-content -->
+                        </div>
+                        <!-- End of .col-md-6 -->
+
+                        <div class="col-md-6">
+                            <div class="img-container">
+                                <img src="images/features-1.png" alt="feature image">
+                            </div>
+                            <!-- End of .img-container -->
+                        </div>
+                        <!-- End of .col-md-6 -->
+                    </div>
+                    <!-- End of .row -->
+                </div>
+                <!-- End of .feature-content -->
+            </div>
+            <!-- End of .feature-wrapper -->
+        </div>
+        <!-- End of .container -->
+    </section>
+    <!-- End of .features -->
+
+    <!-- crowdsale starts
+============================================ -->
+    <section class="section">
+        <div class="container">
+            <div class="crowdsale section-padding" id="_bounty">
+                <div class="section-heading text-center">
+                    <h2>5% Referral Commision</h2>
+                    <p>Get 5% of all the investments made from your affiliate link instantly! Payouts are credited daily in ETH.
+                        <br>Just authorize via Metamask and create your affiliate link below. Share your affiliate link and get your reward.
+                        <br>We keep referral cookies FOREVER. That means even if someone invest after several days of visit, you will get bounty anyway.
+                    </p>
+
+                </div>
+                <!-- End of .section-heading -->
+
+                <div class="token-info">
+                    <div class="row no-gutters">
+                        <div class="col">
+                            <div class="inner-content">
+                                <span>Commission:</span> 5% of the attracted investments
+                            </div>
+                            <!-- End of .inner-content -->
+                        </div>
+                        <!-- End of .col -->
+
+                        <div class="col">
+                            <div class="inner-content">
+                                <span>Payouts:</span> Instant
+                            </div>
+                            <!-- End of .inner-content -->
+                        </div>
+                        <!-- End of .col -->
+
+                        <div class="col">
+                            <div class="inner-content">
+                                <span>Min payout:</span> 0.01 ETH
+                            </div>
+                            <!-- End of .inner-content -->
+                        </div>
+                        <!-- End of .col -->
+                    </div>
+                    <!-- End of .row -->
+                </div>
+                <!-- End of .token-info -->
+                <div class="col-lg-12 error-bar" style="display:none" id="no-metamask-aff">
+                    <h4>Metamask required! Please read this <a href="#why-use-metamask-ref" style="color:#fff;text-decoration:underline" data-toggle="modal" data-target="#why-use-metamask-ref">guide</a></h4>
+                </div>
+                <div class="col-lg-12 error-bar" style="display:none" id="no-mainnet-aff">
+                    <h4>Metamask must run on the mainnet! Please read this <a href="#switch-metamask-to-mainnet" style="color:#fff;text-decoration:underline" data-toggle="modal" data-target="#switch-metamask-to-mainnet">guide</a></h4>
+                </div>
+                <div class="col-lg-12 error-bar" style="display:none" id="no-account-aff">
+                    <h4>Please unlock Metamask</h4>
+                </div>
+                <div class="token-box m-b-40" id="aff_dashboard">
+                    <center>
+                        <div class="token-price">
+                            <h4>Your affiliate link</h4>
+                            <span id="aff_link">-</span>
+                            <h4>Your wallet for payouts</h4>
+                            <span id="aff_wallet">-</span>
+                            <h4>Your referral commission</h4>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h6>Available (confirmed)</h6>
+                                    <span id="aff_balance">-</span>
+                                </div>
+                                <!-- <div class="col-lg-6">
+                                    <h6 style="color:gray;">Pending (waiting to confirm)</h6>
+                                    <span id="aff_balance_unconfirmed" style="color:gray;font-style:italic">-</span>
+                                </div> -->
+                            </div>
+                            Affiliate balance may take some time to update. Minimum balance to be paid: 0.01 ETH. <a href="#" id="refresh_bounty">Refresh</a>
+                            <p id="claim_error" style="color:red"></p>
+                            <p style="margin-top:2rem;">
+                                <a href="#" class="btn btn-small" id="claim_bounty_btn">CLAIM BOUNTY</a>
+                            </p>
+                        </div>
+                        <!--<a href="#" class="btn btn-small">Buy Tokens</a>-->
+                    </center>
+                </div>
+                <!-- End of .token-box -->
+            </div>
+            <!-- End of .crowdsale -->
+        </div>
+        <!-- End of .container -->
+    </section>
+    <!-- End of .crowdsale -->
+
+
+    <!-- FAQ ====================== -->
+
+    <section class="section">
+        <div class="container">
+            <div class="crowdsale section-padding" id="_faq">
+                <div class="section-heading text-center">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div id="accordion" class="accordion m-b-40">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h4 class="mb-0">
+                                <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										<i><img src="images/arrow.png" height="15" width="15"></i>Can I send funds from the exchanges?
+									</a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>No! You will lose your funds. Do not use exchanges. Use only your own personal wallet!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of .card -->
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h4 class="mb-0">
+                                <a href="#" data-toggle="collapse" class="collapsed" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<i><img src="images/arrow.png" height="15" width="15"></i>How project funds are distributed?
+									</a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>5% - dev comission, 90% - belongs to the community, 5% - affiliate/promoter reward</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of .card -->
+
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h4 class="mb-0">
+                                <a href="#" data-toggle="collapse" class="collapsed" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+										<i><img src="images/arrow.png" height="15" width="15"></i>What happens if contract owners disappear?
+									</a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                <p>Owner has nothing to do with it. Everything is handled by the Smart contract automatically. It works independent from anyone or anything.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of .card -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- EOF FAQ ================ -->
+
+    <!-- trusted-partners starts
+============================================ -->
+    <section class="section">
+        <div class="container">
+            <div class="trusted-partners section-padding">
+                <div class="section-heading text-center">
+                    <h2>Support</h2>
+                    <p>Contact us on Discord any time! Click the Discord Logo Below!</p>
+                </div>
+                <!-- End of .section-heading -->
+
+                <div class="partners">
+                    <div class="row justify-content-center">
+                        <div class="partners-logo">
+                            <a href="https://discord.gg/UXrU9Gm" target="_blank"><img src="images/partner-2.png" alt="partners logo"></a>
+                        </div>
+                    </div>
+                    
+                    <!-- End of .row -->
+                </div>
+                <!-- End of .partners -->
+            </div>
+            <!-- End of .trusted-partners -->
+        </div>
+        <!-- End of . container -->
+        
+    </section>
+    <!-- End of .trusted-partners -->
+
+    <!-- footer starts
+============================================ -->
+    <footer class="footer">
+        <div class="radial-bg radial-bg__footer">
+        </div>
+        <!-- End of .radial-bg -->
+        <div class="container">
+        
+            <div class="page-footer">
+            <div align="center">Do not invest anything that you cannot afford to lose. You may earn huge or end up losing your money. Site owner is not responsible for any of your losses.</div>
+                <div class="footer-menu">
+                    <div class="row">
+                        <div class="col-md">
+                            <a href="#" class="d-block">
+                                <img src="images/brand-logo.png" alt="footer logo">
+                            </a>
+                        </div>
+                        <!-- End of .col -->
+
+                        <div class="col-md">
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="#_investments">Investments</a>
+                                </li>
+                                <li>
+                                    <a href="#_howitworks">How it works</a>
+                                </li>
+
+                            </ul>
+                            <!-- End of .footer-nav -->
+                        </div>
+                        <!-- End of .col -->
+
+                        <div class="col-md">
+
+                            <ul class="footer-nav">
+
+                                <li>
+                                    <a href="#_bounty">Affiliate 5% Bounty</a>
+                                </li>
+                                <li>
+                                    <a href="#_faq">FAQ</a>
+                                </li>
+
+                            </ul>
+                            <!-- End of .footer-nav -->
+                        </div>
+                        <!-- End of .col -->
+
+                        <div class="col-md">
+
+                            <ul class="footer-nav">
+                                <li>
+                                    <a href="#_contract">Smart contract</a>
+                                </li>
+                                <li>
+                                    <a href="#_contact">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- End of .footer-nav -->
+                        </div>
+
+                       <div class="col-md">
+
+                            <!-- <ul class="footer-nav">
+                                <li>
+                                    <a href="#_contact">Terms &amp; Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="#_contact">Privacy Policy</a>
+                                </li>
+                            </ul>  -->
+                            <!-- End of .footer-nav -->
+                        </div> 
+                        <!-- End of .col -->
+                    </div>
+                    <!-- End of .row -->
+                </div>
+                <!-- End of .footer-menu -->
+
+                <div class="footer-bottom">
+                    <p>Copyright &copy; 2018 | All Rights Reserved
+                    </p>
+                    
+                    <!-- End of .dropdown -->
+                </div>
+                <!-- End of .footer-copyright -->
+            </div>
+            <!-- End of .page-footer -->
+        </div>
+        <!-- End of .container -->
+    </footer>
+    <!-- End of page-footer -->
+
+
+
+    <!-- Invest-metamask Modal -->
+    <div class="team-modal modal fade" id="invest-metamask" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h3>Enter investments amount
+                                    <span>Minimum is 0.01 ETH</span>
+                                </h3>
+                                <p>
+                                    <input type="text" class="input-lg" placeholder="0.01" id="invest_amount"></input>
+                                </p>
+                                <p id="invest_error" style="color:red"></p>
+                                <p>
+                                    <a href="#" class="btn btn-small" id="invest_send">SEND</a>
+                                </p>
+                                <p style="color:yellow;">If you reinvest (funding ETH to the already existing balance), your previous unpaid dividends will be paid to you immediately</p>
+                                <div class="social-icons social-icons__team-details">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of .Invest-metamask Modal -->
+
+    <!-- Invest-metamask Modal -->
+    <div class="team-modal modal fade" id="tx-modal" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h4>Please wait while Ethereum network confirm your transaction and refresh webpage!</h4>
+                                <h5 id="tx_id" style="color:yellow;word-wrap: break-word;">TX_ID:</h5>
+                                <div class="social-icons social-icons__team-details">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of .Invest-metamask Modal -->
+
+   
+    <!-- why-use-metamask -->
+    <div class="team-modal modal fade" id="why-use-metamask" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h4>Why we recommend to use Metamask</h4>
+                                <p>Metamask is safe Ethereum provider in your browser. With Metamask you can interact with AceReturns directly from the website. You can make investments, check your dividends in real time and withdraw it with one click.</p>
+                                <div class="img-container">
+                                    <img src="images/why-use-metamask1.jpg" alt="team modal image" class="img-fluid">
+                                </div>
+
+                                <h4>How to install Metamask?</h4>
+                                <p>Metamask is simple browser plugin for Chrome, Firefox and Opera. Here is an exhaustive instruction how to install it: <a href="https://medium.com/@followcoin/how-to-install-metamask-88cbdabc1d28" target="_blank">https://medium.com/@followcoin/how-to-install-metamask</a></p>
+
+                                <h4>What if I don't want to use Metamask?</h4>
+                                <p>You can interact with the AceReturns Smart Contract directly. That means you can't see your investments and dividends on AceReturns website (and can't invest or withdraw it with one click), but you can do it all making requests
+                                    to Smart Contract directly. Here is the guides how to do it with <a href="#_other-wallets" onclick="$('#why-use-metamask').modal('toggle');return true;">any other wallet.</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of .why-use-metamask -->
+
+    <!-- switch-metamask-to-mainnet -->
+    <div class="team-modal modal fade" id="switch-metamask-to-mainnet" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h4>How to switch Metamask to the mainnet</h4>
+                                <p>To interact with AceReturns you must be on the mainnet.</p>
+                                <div class="img-container">
+                                    <img src="images/switch-metamask-to-mainnet.jpg" alt="team modal image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- switch-metamask-to-mainnet -->
+
+    <!-- unlock-metamask -->
+    <div class="team-modal modal fade" id="unlock-metamask" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h4>Unlock Metamask to continue</h4>
+                                <div class="img-container">
+                                    <img src="images/unlock-metamask.jpg" alt="team modal image" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- unlock-metamask -->
+
+    <!-- why-use-metamask-ref -->
+    <div class="team-modal modal fade" id="why-use-metamask-ref" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h4>Why do you required to use Metamask</h4>
+                                <p>Our bounty program is fully automated and easy. You don't need to interact with your bounty manager anymore. Because it's automated, all actions like creating your affiliate link, connecting it with your wallet and counting
+                                    payouts need to be done safe and quick. Metamask wallet provide us that opportunity. Once Metamask is installed you can participate in affiliate bounty program immediatly (just refresh webpage)</p>
+                                <div class="img-container">
+                                    <img src="images/why-use-metamask-ref.jpg" alt="team modal image" class="img-fluid">
+                                </div>
+                                <h4>How to install Metamask?</h4>
+                                <p>Metamask is simple browser plugin for Chrome, Firefox and Opera. Here is an exhaustive instruction how to install it: <a href="https://medium.com/@followcoin/how-to-install-metamask-88cbdabc1d28" target="_blank">https://medium.com/@followcoin/how-to-install-metamask</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of .why-use-metamask-ref -->
+
+    <!-- my-ether-wallet -->
+    <div class="team-modal modal fade" id="i-dont-understand" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h5>We would be happy to help you!</h4>
+                                    <p>Just join any group and ask your queston</p>
+                                    <h5>Discord:</h5>
+                                    <p>
+                                        English - <a href="https://discord.gg/3kX7Vv6" target="_blank">https://discord.gg/3kX7Vv6</a>
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- my-ether-wallet -->
+
+    <!-- jaxx -->
+    <div class="team-modal modal fade" id="jaxx" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center text-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h4>How to run AceReturns with Jaxx</h4>
+                                <p>We are still writing a guide. Sorry :(</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jaxx -->
+
+    <!-- how-add-contract-mew -->
+    <div class="team-modal modal fade" id="how-add-contract-mew" tabindex="-1" role="dialog" aria-labelledby="team-modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                    <div class="row align-items-center">
+                        <div class="col-md-12">
+                        </div>
+                        <div class="col-md-12">
+                            <div class="member-details">
+                                <h4>How to interact with smart contracts via myEtherWallet?</h4>
+                                <p style="color:yellow;font-size:2.2rem;">1. Go to "Contract" section</p>
+                                <p><img src="images/how-to-add-contract.jpg"></p>
+                                <p style="color:yellow;font-size:2.2rem;">2. Copy & paste contract address:</p>
+                                <p>
+                                    <center><span style="font-size:2rem">0x9227d9c3410cc848dfe260bddc7430461b37d39c</span></center>
+                                </p>
+                                <p style="color:yellow;font-size:2.2rem;">3. Copy & paste contract ABI:</p>
+                                <code>[
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_hunter",
+				"type": "address"
+			}
+		],
+		"name": "checkReferral",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "withdraw",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "minimum",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "stakingRequirement",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "newOwner",
+				"type": "address"
+			},
+			{
+				"name": "newOwnerWallet",
+				"type": "address"
+			}
+		],
+		"name": "transferOwnership",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_investor",
+				"type": "address"
+			}
+		],
+		"name": "checkInvestments",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "owner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "ownerWallet",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "bounty",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_investor",
+				"type": "address"
+			}
+		],
+		"name": "checkWithdrawals",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "checkBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "step",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_referredBy",
+				"type": "address"
+			}
+		],
+		"name": "buy",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"name": "getBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "investor",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Invest",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "investor",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Withdraw",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "hunter",
+				"type": "address"
+			},
+			{
+				"indexed": false,
+				"name": "amount",
+				"type": "uint256"
+			}
+		],
+		"name": "Bounty",
+		"type": "event"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "previousOwner",
+				"type": "address"
+			},
+			{
+				"indexed": true,
+				"name": "newOwner",
+				"type": "address"
+			}
+		],
+		"name": "OwnershipTransferred",
+		"type": "event"
+	}
+]
+								</code>
+                                </p>
+                                <p style="color:yellow;font-size:2.2rem;">4. Click "Access"</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- how-add-contract-mew -->
+
+
+    <!-- Javascripts
+    ======================================= -->
+    <!-- jQuery -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- <script src="js/jquery-migrate.min.js"></script> -->
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="js/fontawesome-all.min.js"></script>
+    <!-- jQuery Countdown plugin -->
+    <script src="js/jquery.countdown.min.js"></script>
+    <!-- jQuery Easing Plugin -->
+    <script src="js/easing-1.3.js"></script>
+    <!-- jQuery progressbar plugin -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Bootstrap Progressbar -->
+    <script src="js/bootstrap-progressbar.min.js"></script>
+    <!-- ImagesLoaded js -->
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- Slick carousel js -->
+    <script src="js/slick.min.js"></script>
+    <!-- Magnific popup -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- BlockUI -->
+    <script src="js/jquery.blockUI.js"></script>
+
+    <!-- pie chart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <!-- Custom js -->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/four.min.js"></script>
+
+    <script type="text/javascript">
+      function getCookie(name) {
+            var dc = document.cookie;
+            var prefix = name + "=";
+            var begin = dc.indexOf("; " + prefix);
+
+        if (begin == -1) {
+                begin = dc.indexOf(prefix);
+                if (begin != 0) return null;
+            }
+            else
+            {
+                begin += 2;
+                var end = document.cookie.indexOf(";", begin);
+                if (end == -1) {
+                end = dc.length;
+              }
+            }
+
+        return decodeURI(dc.substring(begin + prefix.length, end));
+      }
+
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var theCookie = "masternode=" + url.searchParams.get("masternode");
+
+      if (url.searchParams.get("masternode") !== null) {
+        var toSet = "masternode=" + url.searchParams.get("masternode");
+        document.cookie=theCookie;
+      } else {
+
+        var refCookie = getCookie("masternode");
+
+        if (refCookie === null) {
+          console.log("Ref cookie was null. Setting to default.");
+          document.cookie = "masternode=0x0x0000000000000000000000000000000000000000";
+        } else {
+          // do nothing if the cookie is already set and there is no new mnode link
+        }
+      }
+</script>
+
+</body>
+
+</html>
